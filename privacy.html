@@ -33,7 +33,7 @@ footer{padding-top:24px;padding-bottom:48px;color:var(--muted);font-size:.9375re
 <body>
 <header>
 <h1><span class="bulb" aria-hidden="true"></span>Privacy policy</h1>
-<p class="meta">Halloween Porch: Haunt Map. Last updated October 8, 2026.</p>
+<p class="meta">Halloween Porch: Haunt Map. Last updated October 9, 2026.</p>
 <nav aria-label="Pages"><a href="support.html">Support and FAQ</a></nav>
 </header>
 <main>
@@ -44,7 +44,7 @@ footer{padding-top:24px;padding-bottom:48px;color:var(--muted);font-size:.9375re
 <li>No ads, no tracking and no third-party analytics.</li>
 <li>Visiting porches needs no account.</li>
 <li>Your passport stamps stay on your phone.</li>
-<li>Porch locations are visible only to the community that holds the join code, and are removed after November 2.</li>
+<li>The app shows porches in the community you join. Shared porch data is stored in a CloudKit public database.</li>
 </ul>
 
 <h2>What stays on your phone</h2>
@@ -52,26 +52,26 @@ footer{padding-top:24px;padding-bottom:48px;color:var(--muted);font-size:.9375re
 <li>Your passport stamps and the secret words you earned.</li>
 <li>A saved copy of your community's porches, so the app works with a weak signal.</li>
 <li>Your location while you walk to a porch. It is used on the device to show distance and a compass arrow. It is not sent to us or to anyone else.</li>
-<li>Camera images. The camera is used on the device to recognise the porch sign and show AR. Images are not saved or uploaded.</li>
+<li>Camera images are processed on the device to show AR. Photos and video are not uploaded. Hosts can upload an AR feature-point map of the porch, described below.</li>
 </ul>
 
 <h2>What hosts store online</h2>
 <p>When you host a porch, the app saves records to a CloudKit public database in the developer's iCloud container. You need to be signed in to iCloud to do this. The records are:</p>
 <ul>
 <li>Your porch: name, house label, map position, light status (on, low on candy, off), scare level, trick, riddle and answers, and secret treat word.</li>
-<li>Your AR scares: which scare and where it sits relative to the sign.</li>
+<li>Your AR scares: which scare and where it stands on your porch, plus an optional scan of the porch shape (AR feature points, not photos) to help visitors line up the scares.</li>
 <li>A stamp count: when a visitor signed in to iCloud earns a stamp at your porch, a record with the porch and community ids is saved so you can see how many came by. It has no name.</li>
-<li>Reports: if someone reports a porch, the porch id and the reason are saved.</li>
+<li>Reports: if someone reports a porch, the porch ID, community ID and reason are saved. Reports are readable by their creator and the developer, not by other app users.</li>
 </ul>
 <p>Each record is tied to the iCloud account that created it by CloudKit. We never see your Apple ID email or name through the app. The developer can read the public database through the CloudKit dashboard, which we use only to run the app and to review reports.</p>
 
 <h2>Who can see a porch</h2>
-<p>Only people who have joined the same community with its 6-character invite code, QR code or link. Porches are not searchable by anyone else. The community organiser can hide a porch.</p>
+<p>The app shows the community you join with a code, QR code or link. Community, porch, scare and stamp-count records are stored in a CloudKit public database and can be read by other users of the container. The invite code filters what the app shows; it is not a private access permission. Do not post sensitive information. The community organizer can hide a porch in the app.</p>
 
 <h2>How long we keep it</h2>
 <ul>
 <li>The app deletes a host's porch and scares after November 2, the next time the host opens the app.</li>
-<li>You can delete your porch at any time from the Settings screen in the app.</li>
+<li>You can delete your porch at any time in Community settings. Contact us to request removal of other records you created, including reports and stamp-count events.</li>
 <li>You can also email us and we will delete it for you.</li>
 </ul>
 
@@ -79,7 +79,7 @@ footer{padding-top:24px;padding-bottom:48px;color:var(--muted);font-size:.9375re
 <p>Text that hosts type (porch names, riddles, answers, treat words) is checked against a word filter before saving. Anyone can report a porch. We review reports and remove content that breaks the rules within 24 hours.</p>
 
 <h2>Children</h2>
-<p>The app is not directed at children under 13 as hosts. Visitors need no account, and we collect nothing from them. Hosting needs an iCloud account, which a parent or guardian manages for a child.</p>
+<p>The app is not directed at children under 13 as hosts. Visitors need no app account. When a visitor signed in to iCloud earns a stamp, the app sends a porch and community stamp event for the host count. Reports also require iCloud. Hosting needs an iCloud account, which a parent or guardian manages for a child.</p>
 
 <h2>Tracking and third parties</h2>
 <p>The app does not track you across other apps or websites and contains no advertising or third-party SDKs. Apple processes iCloud data under its own privacy policy.</p>
